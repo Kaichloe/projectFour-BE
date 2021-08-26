@@ -1,10 +1,11 @@
 import {Router} from 'express';
+import {getAllWatchList} from './watchlist';
 
 //Watchlist-route
 const watchListRouter = Router();
-watchListRouter.get('/', getAllwatchLists);
-watchListRouter.post('/',addOrUpdatewatchList);
-watchListRouter.delete('/:handle', deleteProfileByHandle);
+watchListRouter.get('/', getAllWatchList);
+// watchListRouter.post('/',addOrUpdatewatchList);
+// watchListRouter.delete('/:handle', deleteProfileByHandle);
 
 
 //Root-router
